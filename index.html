@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evolução Diária</title>
+    
+    <style>
+        /* CSS Integrado */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&family=Playfair+Display:wght@400;700&display=swap');
+
+        :root {
+            --cor-primaria: #FFFFFF; /* Branco */
+            --cor-secundaria: #F8F8F8; /* Um bege muito claro, quase branco */
+            --cor-destaque: #E0E0E0; /* Um bege ligeiramente mais escuro para detalhes */
+            --cor-texto: #333333; /* Cinza escuro para o texto */
+            --cor-links: #666666; /* Cinza para links */
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif; /* Fonte moderna e limpa */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: var(--cor-secundaria);
+            color: var(--cor-texto);
+        }
+
+        header {
+            background-color: var(--cor-primaria);
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--cor-destaque);
+            text-align: center;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; /* Para garantir que os links se ajustem em telas menores */
+        }
+
+        nav ul li {
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: var(--cor-links);
+            font-weight: 400;
+            padding: 5px 10px;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--cor-texto);
+            font-weight: 700;
+        }
+
+        .hero {
+            background-color: var(--cor-primaria);
+            text-align: center;
+            padding: 100px 20px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+        }
+
+        .hero h1 {
+            font-family: 'Playfair Display', serif; /* Fonte mais elegante para títulos */
+            font-size: 3em;
+            color: var(--cor-texto);
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: var(--cor-links);
+        }
+
+        .section-content {
+            background-color: var(--cor-primaria);
+            margin: 20px auto;
+            padding: 40px;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.08);
+        }
+
+        .section-content h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2.2em;
+            color: var(--cor-texto);
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--cor-destaque);
+            padding-bottom: 10px;
+        }
+
+        .section-content p {
+            margin-bottom: 15px;
+            text-align: justify; /* Alinhamento justificado para o corpo do texto */
+        }
+        
+        .section-content p a {
+            color: var(--cor-links);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        .section-content p a:hover {
+            color: var(--cor-texto);
+            text-decoration: underline;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+            background-color: var(--cor-destaque);
+            color: var(--cor-texto);
+            font-size: 0.9em;
+        }
+        
+        footer a {
+            color: var(--cor-texto);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsividade Básica */
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav ul li {
+                margin: 5px 0;
+            }
+
+            .hero h1 {
+                font-size: 2.5em;
+            }
+
+            .section-content {
+                padding: 25px;
+                margin: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">Sobre Mim</a></li>
+                <li><a href="#jornada">Minha Jornada</a></li>
+                <li><a href="#paixoes">Minhas Paixões</a></li>
+                <li><a href="#sonhos">Meus Sonhos</a></li>
+                <li><a href="#blog">Meu Blog</a></li>
+                <li><a href="#contato">Contato</a></li>
+                
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hero">
+            <h1>Evolução Diária</h1>
+            <p>Conheça a história de Elisane, uma mulher em constante evolução.</p>
+        </section>
+
+        <section id="sobre" class="section-content">
+            <h2>Sobre Mim</h2>
+            <p>Olá! Meu nome é Elisane, e tenho 21 anos. Atualmente, sou estudante de Pedagogia no IFMT, buscando conhecimento e novas perspectivas para o futuro.</p>
+            <p>Além dos estudos, sou bolsista de inglês na Mover Hello, o que me abre portas para um mundo de novas culturas e oportunidades.</p>
+        </section>
+
+        <section id="jornada" class="section-content">
+            <h2>Minha Jornada</h2>
+            <p>A vida é feita de desafios e superações, e a minha não é diferente. Estou em uma jornada importante de luta contra a obesidade e a depressão, aprendendo a cada dia sobre resiliência e autocuidado.</p>
+            <p>Cada passo é uma vitória, e o apoio que encontro em mim mesma e nas pessoas ao meu redor me impulsiona a seguir em frente.</p>
+        </section>
+
+        <section id="paixoes" class="section-content">
+            <h2>Minhas Paixões</h2>
+            <p>Sou apaixonada por leitura! Gosto de explorar temas variados, desde filosofia e psicologia até ficção e autoajuda. Os livros são meus grandes companheiros e fontes inesgotáveis de inspiração.</p>
+        </section>
+
+        <section id="sonhos" class="section-content">
+            <h2>Meus Sonhos</h2>
+            <p>Tenho um grande sonho: me tornar corredora. Comecei essa jornada com foco e determinação, e a cada treino me sinto mais perto de alcançar esse objetivo. É um caminho de persistência, mas sei que a linha de chegada me espera!</p>
+        </section>
+        <section id="blog" class="section-content">
+            <h2>Meu Blog</h2>
+            <li><a href="Dicasdeingles.html">Inglês Gratuito</a></li>
+        </section>
+
+        <section id="contato" class="section-content">
+            <h2>Entre em Contato</h2>
+            <p>Gostaria de conversar ou compartilhar experiências? Sinta-se à vontade para me contatar. Você pode me encontrar no Instagram: <a href="https://www.instagram.com/elisane_as_araujo/" target="_blank">@elisane_as_araujo</a>.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Evolução Diária. Todos os direitos reservados.</p>
+        <p>Siga-me no Instagram: <a href="https://www.instagram.com/elisane_as_araujo/" target="_blank">@elisane_as_araujo</a></p>
+    </footer>
+
+    <script>
+        // JavaScript Integrado
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
